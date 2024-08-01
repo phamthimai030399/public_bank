@@ -153,9 +153,17 @@ header .header-banner .header-bottom .bottom-nav .header-button .button {
   align-items: center;
   display: flex;
   border-radius: 5px;
+  transition: all 0.5s ease;
+}
+header .header-banner .header-bottom .bottom-nav .header-button .button:hover {
+  background: #ffcece;
+  transition: all 0.5s ease;
 }
 header .header-banner .header-bottom .header-button .button.button-red {
   background: rgb(196, 28, 22);
+}
+header .header-banner .header-bottom .header-button .button.button-red:hover {
+  background: rgb(167, 9, 3);
 }
 header .header-banner .header-bottom .header-button .button.button-red a {
   color: #fff;
@@ -326,6 +334,9 @@ header .header-banner .intro-button a:hover span {
   font-size: 16px;
   background: rgb(196, 28, 22);
   color: #fff;
+}
+.introduce .introduce-button a:hover {
+  background: rgb(153, 7, 2);
 }
 .introduce .introduce-button a svg {
   margin-left: 20px;
