@@ -33,20 +33,20 @@ header .top-container {
 header .top-container .logo-top {
   width: 40%;
 }
-header .top-container .top-right {
+header .top-right {
   display: flex;
   justify-content: end;
   gap: 40px;
 }
-header .top-container .top-right .item-right a {
+header .top-right .item-right a {
   font-size: 14px;
   font-weight: 400;
 }
-header .top-container .top-right .item-right {
+header .top-right .item-right {
   font-size: 14px;
   font-weight: 400;
 }
-header .top-container .top-right .item-right svg {
+header .top-right .item-right svg {
   width: 17px;
   height: 17px;
 }
@@ -147,7 +147,7 @@ header .header-banner .header-bottom .bottom-nav {
   flex-wrap: wrap;
 }
 header .header-banner .header-bottom .bottom-nav .header-button .button {
-  padding: 5% 10%;
+  padding: 10px 20px;
   background: #fff;
   justify-content: center;
   align-items: center;
@@ -216,7 +216,21 @@ header .header-banner .intro-button a:hover span {
   -o-transform: translate(0px, 48px);
   -webkit-transform: translate(0px, 48px);
 }
+@media (max-width: 1399.99px) {
+  header .header-banner .header-bottom .bottom-nav {
+    display: block;
+  }
+}
 @media (max-width: 991.99px) {
+  header .top-right {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  header .top-right .item-right svg {
+    width: 14px;
+    height: 14px;
+  }
   header .top-container .header-action-item svg {
     width: 20px;
     height: 30px;
@@ -224,9 +238,6 @@ header .header-banner .intro-button a:hover span {
   header .top-container .logo-top {
     width: 70%;
     padding: 10px 0;
-  }
-  header .top-container .top-right {
-    display: none;
   }
   header .header-banner .header-bottom .bottom-nav {
     display: flex;
@@ -322,6 +333,10 @@ header .header-banner .intro-button a:hover span {
 @media (max-width: 991.99px) {
   .introduce .introduce-right {
     width: 20%;
+  }
+  .introduce .introduce-button a {
+    padding: 7px 10px;
+    font-size: 14px;
   }
   .introduce .introduce-container {
     top: 10%;
@@ -535,4 +550,76 @@ footer .copy-right p {
     display: inline;
     white-space: nowrap;
   }
+}
+
+
+/* MENU MOBILE  */
+header #menu-mobile {
+  width: 80vw;
+  max-width: 450px;
+  background: #fff;
+}
+header #menu-mobile .btn-close {
+  right: 10px;
+  position: absolute;
+  top: 10px;
+}
+header #menu-mobile .header-nav-mobile {
+  margin-top: 40px;
+}
+header #menu-mobile .header-nav-mobile li {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--clr-border);
+}
+header #menu-mobile .header-nav-mobile li a {
+  color: var(--clr-green-black);
+  font-size: 14px;
+}
+header #menu-mobile .header-nav-mobile li a:hover {
+  color: #6d8434;
+  transition: all 0.5s ease;
+}
+/* .header .header-nav-item {
+  padding: 15px 0 41px 0;
+} */
+header #menu-mobile .nav-list .header-nav-list-lv0 {
+  padding-left: 30px;
+  margin-top: 15px;
+}
+header #menu-mobile .nav-list .header-nav-list-lv0 .header-nav-list-lv1 {
+  list-style: none;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+header #menu-mobile .nav-list .header-nav-list-lv0 .header-nav-list-lv1 li {
+  list-style: none;
+}
+header #menu-mobile .nav-list .close-sub-nav svg:nth-child(1) {
+  display: none;
+}
+header #menu-mobile .nav-list .close-sub-nav.collapsed svg:nth-child(2) {
+  display: none;
+}
+header #menu-mobile .nav-list .close-sub-nav {
+  position: absolute;
+  top: 13px;
+  right: 0px;
+  padding: 10px 0 10px 20px;
+}
+header #menu-mobile .nav-list .close-sub-nav svg {
+  width: 12px;
+}
+header #menu-mobile .header-nav-mobile li {
+  padding: 15px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+header #menu-mobile .nav-list .close-sub-nav.collapsed svg:nth-child(1) {
+  display: block !important;
+}
+header #menu-mobile .nav-list .close-sub-nav svg:nth-child(1) {
+  display: none;
+}
+header #menu-mobile .header-nav-mobile li:last-child {
+  border: none;
 }
