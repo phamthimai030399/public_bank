@@ -73,7 +73,7 @@ header .header-banner .header-bottom .header-nav ul.nav svg {
   width: 20px;
   height: 20px;
 }
-header .header-banner .header-bottom .header-nav ul.nav .submenu .item-submenu {
+header .header-banner .header-bottom .header-nav ul.nav .nav-lv2 .nav-item-lv2 {
   position: relative;
 }
 header
@@ -81,9 +81,9 @@ header
   .header-bottom
   .header-nav
   ul.nav
-  .submenu
-  .item-submenu
-  .item-dropdown {
+  .nav-lv2
+  .nav-item-lv2
+  .nav-lv3 {
   position: absolute;
   left: 100%;
   width: fit-content;
@@ -97,9 +97,9 @@ header
   .header-bottom
   .header-nav
   ul.nav
-  .submenu
-  .item-submenu
-  .item-dropdown
+  .nav-lv2
+  .nav-item-lv2
+  .nav-lv3
   li {
   padding: 7px 20px;
 }
@@ -108,34 +108,34 @@ header
   .header-bottom
   .header-nav
   ul.nav
-  .submenu
-  .item-submenu:hover
-  .item-dropdown {
+  .nav-lv2
+  .nav-item-lv2:hover
+  .nav-lv3 {
   display: block;
 }
-header .header-banner .header-bottom .header-nav ul.nav .submenu {
+header .header-banner .header-bottom .header-nav ul.nav .nav-lv2 {
   position: absolute;
   top: 100%;
   display: none;
   width: fit-content;
   white-space: nowrap;
 }
-header .header-banner .header-bottom .header-nav ul.nav .submenu .item-submenu {
+header .header-banner .header-bottom .header-nav ul.nav .nav-lv2 .nav-item-lv2 {
   padding: 7px 20px;
   background: rgba(0, 0, 0, 0.24);
   border-radius: 5px;
 }
-header .header-banner .header-bottom .header-nav li.nav-item:hover .submenu {
+header .header-banner .header-bottom .header-nav li.nav-item-lv1:hover .nav-lv2 {
   display: block;
 }
-header .header-banner .header-bottom .header-nav ul.nav li.nav-item a {
+header .header-banner .header-bottom .header-nav ul.nav li.nav-item-lv1 a {
   color: #fff;
   text-transform: uppercase;
   display: inline;
   white-space: nowrap;
   font-size: 14px;
 }
-header .header-banner .header-bottom .header-nav ul.nav li.nav-item {
+header .header-banner .header-bottom .header-nav ul.nav li.nav-item-lv1 {
   display: flex;
   gap: 5px;
   padding: 15px 0;
